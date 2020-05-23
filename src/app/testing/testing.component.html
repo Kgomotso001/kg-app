@@ -1,0 +1,40 @@
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" id="cropped">
+      <img src="https://images.pexels.com/photos/2773565/pexels-photo-2773565.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item"  id="cropped">
+      <img src="https://images.pexels.com/photos/3671142/pexels-photo-3671142.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item"  id="cropped">
+      <img src="https://images.pexels.com/photos/720948/pexels-photo-720948.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Usersname</th>
+        <th scope="col">Emaail</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let user of users" >
+        <td> {{user.id}} </td>
+        <td> {{user.name}} </td>
+        <td> {{user.username}} </td>
+        <td> {{user.email}} </td>
+      </tr>
+    </tbody>
+  </table>
